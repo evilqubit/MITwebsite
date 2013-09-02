@@ -1,22 +1,4 @@
-<?php
-/************************************************
- *                                         
- *  Qualizone Automation System © 2013
- * ********************************************* 
- * ICT Director: Dr. Ayman Dayekh
- * Developed by: Jamil M. Abdallah, Malak Chaib              
- *  File name:  Auth.class.php
- *  Date created: Jun 6, 2013
- * ********************************************* 
- *  Authentication class
- *  organizes all authentication based actions
- * ********************************************* 
- * http://www.qualizone-lb.com/
- * 3rd Floor – Al-Sahel Center – Airport Blvd
- * Beirut – Lebanon
- * Office: +961 (1) 82 55 74
- * Email: info@qualizone-lb.com
- *************************************************/
+<?php 
 include_once '../include/connection.php';
 include_once '../include/functions.php';
 class Auth extends Database

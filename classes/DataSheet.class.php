@@ -1,16 +1,4 @@
-<?php
-/************************************************
- *                                         
- *  Qualizone Automation System © 2013
- * ********************************************* 
- * ICT Director: Dr. Ayman Dayekh
- * Developed by: Jamil M. Abdallah, Malak Chaib              
- *  File name:  DataSheet.class.php
- *  Date created: Jun 6, 2013
- * ********************************************* 
- *  class that organizes the creation of tables
- *  with custom styling
- *************************************************/
+<?php 
 define("on", 1);
 define("off", 0);
 /**

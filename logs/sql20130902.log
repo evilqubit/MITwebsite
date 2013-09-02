@@ -1,0 +1,208 @@
+select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:00:46
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:00:46
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:11:01
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:13:41
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:13:52
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:15:27
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:18:37
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:18:37
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:19:43
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:19:43
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:20:43
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:20:43
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:20:50
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:22:20
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:22:23
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:22:23
+	
+			select * from question 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:29:29
+	
+			select * from question 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:37:39
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:38:08
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:38:15
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:38:51
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:39:15
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:40:46
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:40:49
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:40:52
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:40:52
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:41:35
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:41:35
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:42:29
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:42:29
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:42:41
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:42:41
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:42:55
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:42:55
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:47:17
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:47:17
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:47:51
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-02 03:47:51
+	

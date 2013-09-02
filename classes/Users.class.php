@@ -1,15 +1,4 @@
-<?php
-/************************************************
- *                                         
- *  Qualizone Automation System © 2013
- * ********************************************* 
- * ICT Director: Dr. Ayman Dayekh
- * Developed by: Jamil M. Abdallah, Malak Chaib              
- *  File name:  Users.class.php
- *  Date created: Jun 6, 2013
- * ********************************************* 
- * Class that controls all users database activities
- *************************************************/
+<?php 
  
 include_once '../include/connection.php';
 include_once '../include/functions.php';

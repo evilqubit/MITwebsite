@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 session_start(); 
 // database setting
- 
+ $_SESSION['user_authorized'] = 1; // ja 2delete
 
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
@@ -71,10 +71,11 @@ function my_autoloader($class) {
 } 
 spl_autoload_register('my_autoloader');
 
+/*
 // instance of auth variable
 $auth  = new Auth(); 
 $user = $auth->loadUser();
- 
+ */
 
 // Including supported files
 if (isset($support["Editor"])) 

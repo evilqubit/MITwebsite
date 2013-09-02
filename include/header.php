@@ -24,8 +24,7 @@ if (isset($pageId) && $pageId!="" )
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width"> 
-        <link rel="stylesheet" href="../css/jquery-ui-1.8.4.custom.css">
-        <link rel="stylesheet" href="../css/bootstrap_<?php echo $lang;?>.css">
+        <link rel="stylesheet" href="../css/jquery-ui-1.8.4.custom.css"> 
         <style>
             body {
                 padding-top: 60px;
