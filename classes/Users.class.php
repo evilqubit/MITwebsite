@@ -6,9 +6,8 @@ class Users extends Database
 {	
 	public function __construct() 
 	{  
-		$this->_table = "user";
-		$this->_tableRoles = "role";
-		$this->_key = "iduser";
+		$this->_table = "users"; 
+		$this->_key = "uid";
 		$this->_active = "active";
 		$this->_deleted="deleted";
 		$this->_lastAccess="lastAccess";

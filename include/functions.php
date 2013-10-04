@@ -371,6 +371,303 @@ function displayOccupationType($type)
 	}
 	return '';
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-	 
+/**
+ * Ahmad login related functions
+ */
+
+function createAccount($data) {
+	//Array ( [type] => 1 [username] => admin1 [password] => 123456 [fname] => sas [lname] => dsvdv 
+	//		[email] => dev.ahmadrahhal@gmail.com [country] => Lebanon [competition] => 4 [lang] => fr )
+	// First check we have data passed in.
+	
+	$pUsername = $data['username'];
+	$pPassword = $data['password'];
+	$email =  $data['email'];
+    $type =  mysql_real_escape_string($data['type']);
+	$fname =  mysql_real_escape_string($data['fname']);
+	$lname =  mysql_real_escape_string($data['lname']);
+	$country =  mysql_real_escape_string($data['country']);
+	$lang =  mysql_real_escape_string($data['lang']);
+	$competition =  mysql_real_escape_string($data['competition']);
+	
+	
+	if (!empty($pUsername) && !empty($pPassword)) {
+		$uLen = strlen($pUsername);
+		$pLen = strlen($pPassword);
+		
+		// escape the $pUsername to avoid SQL Injections
+		$eUsername = mysql_real_escape_string($pUsername);
+	    $sql = "SELECT username FROM users WHERE username = '" . $eUsername . "' LIMIT 1";
+
+		$eEmail = mysql_real_escape_string($email);
+		$sql2 = "SELECT username FROM users WHERE email = '" . $eEmail . "' LIMIT 1";
+		
+		
+		// Note the use of trigger_error instead of or die.
+		$query = mysql_query($sql) or die ("Query Failed: " . mysql_error());
+		$query2 = mysql_query($sql2) or die("Query Failed: " . mysql_error());
+		// Error checks (Should be explained with the error)
+		if ($uLen <= 4 || $uLen >= 11) {
+			$_SESSION['error'] = "Username must be between 4 and 11 characters.";
+		}elseif ($pLen < 6) {
+			$_SESSION['error'] = "Password must be longer then 6 characters.";
+		}elseif (mysql_num_rows($query) == 1) {
+			$_SESSION['error'] = "Username already exists.";
+		}elseif (mysql_num_rows($query2) == 1) {
+			$_SESSION['error'] = "Email already exists.";
+		}
+		else {
+			
+			
+			
+			// All errors passed lets
+			
+			$sqlApp = "INSERT INTO application (`types_idtypes`, `lang`) VALUES ('" . $type . "', '" . $lang . "');";
+			$queryApp = mysql_query($sqlApp) or trigger_error("Query Failed: " . mysql_error());
+			$row = mysql_insert_id();
+			if ($queryApp) {
+			
+			$sql = "INSERT INTO users (`username`, `password` , `email`,`lang`,`fname`,`lname`,`country`,`applicationId`,`learn`) VALUES ('" . $eUsername . "', '" . hashPassword($pPassword, SALT1, SALT2) . "','".$email."','".$lang."','".$fname."','".$lname."','".$country."','".$row."','".$competition."');";
+			$query = mysql_query($sql) or trigger_error("Query Failed: " . mysql_error());
+			
+			if ($query) {
+				return true;
+			}
+			}	
+		}
+	}
+	
+	return false;
+}
+
+/***********
+	string hashPassword (string $pPassword, string $pSalt1, string $pSalt2)
+		This will create a SHA1 hash of the password
+		using 2 salts that the user specifies.
+************/
+function hashPassword($pPassword, $pSalt1="2345#$%@3e", $pSalt2="taesa%#@2%^#") {
+	return sha1(md5($pSalt2 . $pPassword . $pSalt1));
+}
+
+/***********
+	bool loggedIn
+		verifies that session data is in tack
+		and the user is valid for this session.
+************/
+function loggedIn() {
+	// check both loggedin and username to verify user.
+	if (isset($_SESSION['loggedin']) && isset($_SESSION['username'])) {
+		return true;
+	}
+	
+	return false;
+}
+
+/***********
+	bool logoutUser 
+		Log out a user by unsetting the session variable.
+************/
+function logoutUser() {
+	// using unset will remove the variable
+	// and thus logging off the user.
+	unset($_SESSION['username']);
+	unset($_SESSION['loggedin']);
+	
+	return true;
+}
+
+/***********
+	bool validateUser
+		Attempt to verify that a username / password
+		combination are valid. If they are it will set
+		cookies and session data then return true. 
+		If they are not valid it simply returns false. 
+************/
+function validateUser($pUsername, $pPassword) {
+	// See if the username and password are valid.
+	$sql = "SELECT username,applicationId FROM users 
+		WHERE username = '" . mysql_real_escape_string($pUsername) . "' AND password = '" . hashPassword($pPassword, SALT1, SALT2) . "' LIMIT 1";
+	$query = mysql_query($sql) or trigger_error("Query Failed: " . mysql_error());
+	
+	// If one row was returned, the user was logged in!
+	if (mysql_num_rows($query) == 1) {
+		$row = mysql_fetch_assoc($query);
+		$_SESSION['username'] = $row['username'];
+		$_SESSION['applicationId'] = $row['applicationId'];
+		$_SESSION['loggedin'] = true;
+			
+		return true;
+	}
+	return false;
+}
+
+function checkEmail($email) {
+		// See if the username and password are valid.
+		$sql = "SELECT username,email,uid FROM users
+		WHERE email = '" . mysql_real_escape_string($email) .  "' LIMIT 1";
+		$query = mysql_query($sql) or trigger_error("Query Failed: " . mysql_error());
+	
+		// If one row was returned, the user was logged in!
+		if (mysql_num_rows($query) == 1) {	
+			$row = mysql_fetch_assoc($query);
+			$data['id'] = $row['uid'];
+			$data['username']  = $row['username'];
+			return $data;
+		}	
+	return false;
+}
+
+function updatePassword($password,$userId){
+  $sql = "update users set password='".hashPassword($password, SALT1, SALT2) ."' where uid = ".$userId;
+	$query = mysql_query($sql);
+	if ($query) {
+		return true;
+	}
+	return false;
+}
+
+function getMember($mid){
+	
+	$sql = "SELECT * FROM members
+	WHERE id = '" . mysql_real_escape_string($mid) .  "' LIMIT 1";
+	
+	$query = mysql_query($sql) or trigger_error("Query Failed: " . mysql_error());
+	
+	if (mysql_num_rows($query) == 1) {
+		$row = mysql_fetch_assoc($query);
+		$data['id'] = $row['id'];
+		$data['fname']  = $row['fname'];
+		$data['lname']  = $row['lname'];
+		$data['gender']  = $row['gender'];
+		$data['birth']  = $row['birth'];
+		$data['nationality']  = $row['nationality'];
+		$data['education']  = $row['education'];
+		$data['other_education']  = $row['other_education'];
+		$data['major']  = $row['major'];
+		$data['graduation_year']  = $row['graduation_year'];
+		$data['profectional_background']  = $row['profectional_background'];
+		$data['current_occupation']  = $row['current_occupation'];
+		$data['email']  = $row['email'];
+		$data['graduation_year']  = $row['graduation_year'];
+		$data['phone']  = $row['phone'];
+		return $data;
+	}
+	return false;
+	
+}
+
+function editMember($editMember){
+	
+	$fname =mysql_real_escape_string($editMember['lname']) ;
+	$lname =mysql_real_escape_string($editMember['fname']) ;
+	$birth = mysql_real_escape_string($editMember['birth']) ;
+	$nationality = mysql_real_escape_string($editMember['nationality']) ;
+	$major = mysql_real_escape_string($editMember['major']) ;
+	$graduation =mysql_real_escape_string($editMember['graduation']) ;
+	$phone =mysql_real_escape_string($editMember['phone']) ;
+	$email =mysql_real_escape_string($editMember['email']) ;
+	$background =mysql_real_escape_string($editMember['background']) ;
+	$occupation =mysql_real_escape_string($editMember['occupation']) ;
+	$education =mysql_real_escape_string($editMember['education']) ;
+	$gender =mysql_real_escape_string($editMember['gender']) ;
+	$uid =mysql_real_escape_string($editMember['uid']) ;
+	$other =mysql_real_escape_string($editMember['other']) ;
+	$sql = "update members set phone='".$phone."', email='".$email."',current_occupation='".$occupation."', profectional_background ='".$background."',graduation_year='".$graduation."', major ='".$major."',other_education='".$other."', education ='".$education."', nationality ='".$nationality."', birth ='".$birth."',fname='".$fname."', lname='".$lname."',gender ='".$gender."'  where id = ".$uid;
+	
+	$query = mysql_query($sql);
+	if ($query) {
+		return true;
+	}
+	return false;
+	
+}
+
+function addMember($addMember){
+	
+	
+	$fname =mysql_real_escape_string($addMember['lname']) ;
+	$lname =mysql_real_escape_string($addMember['fname']) ;
+	$birth = mysql_real_escape_string($addMember['birth']) ;
+	$nationality = mysql_real_escape_string($addMember['nationality']) ;
+	$major = mysql_real_escape_string($addMember['major']) ;
+	$graduation =mysql_real_escape_string($addMember['graduation']) ;
+	$phone =mysql_real_escape_string($addMember['phone']) ;
+	$email =mysql_real_escape_string($addMember['email']) ;
+	$background =mysql_real_escape_string($addMember['background']);
+	$occupation =mysql_real_escape_string($addMember['occupation']);
+	$education =mysql_real_escape_string($addMember['education']);
+	$gender =mysql_real_escape_string($addMember['gender']);
+	$other =mysql_real_escape_string($addMember['other']) ;
+	$appId =mysql_real_escape_string($addMember['appId']) ;
+	
+	
+	$sql = "INSERT INTO members (`phone`, `email` , `current_occupation`,`profectional_background`,`graduation_year`
+	,`major`,`other_education`,`education`,`nationality`,`birth`,`fname`,`lname`,`gender`,`applicationId`)
+	 VALUES ('" . $phone . "', '" .$email. "','".$occupation."',
+	'".$background."','".$graduation."','".$major."','".$other."','".$education."','".$nationality."'
+	,'".$birth."','".$fname."','".$lname."','".$gender."','".$appId."');";
+			$query = mysql_query($sql) or trigger_error("Query Failed: " . mysql_error());
+			
+	if ($query) {
+		return true;
+	}
+	return false;
+
+}
+
+function deleteMember($memberId){
+	$sql = "delete FROM  members where id = ".mysql_real_escape_string($memberId) ;
+	$query = mysql_query($sql);
+	if ($query) {
+		return true;
+	}
+	return false;	
+}
+
+function getAppMembers($appId){
+
+	$sql = "SELECT id,fname,lname FROM members
+	WHERE applicationId = '" . mysql_real_escape_string($appId)."'" ;
+
+	$query = mysql_query($sql) or trigger_error("Query Failed: " . mysql_error());
+	$key = 0;
+	while($row = mysql_fetch_assoc($query))
+	{
+		$data[$key]['id'] = $row['id']; 
+		$data[$key]['fname'] = $row['fname'];
+		$data[$key]['lname'] = $row['lname'];
+		$key++;
+	}
+
+	
+		return $data;
+
+}
 ?>

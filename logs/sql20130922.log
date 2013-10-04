@@ -1,0 +1,5 @@
+select e.*   from members e 
+		
+		where applicationId = 6  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-09-22 18:17:30
+	

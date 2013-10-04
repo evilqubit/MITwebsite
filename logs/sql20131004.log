@@ -1,0 +1,108 @@
+select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:45:49
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:45:50
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:46:55
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:47:09
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:47:09
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:49:52
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:49:52
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:50:39
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:50:39
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:53:23
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:53:23
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:54:32
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:54:32
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:56:32
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:56:32
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:56:49
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 01:56:49
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 03:21:40
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 03:21:40
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-04 03:27:30
+	

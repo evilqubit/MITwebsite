@@ -29,6 +29,15 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
+				array('label'=>'Pages', 'url'=>array('/pages'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Questions', 'url'=>array('/questions'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Jury', 'url'=>array('/jury'), 'visible'=>!Yii::app()->user->isGuest),
+				 array('label'=>'Newsletter', 'url'=>array('/newsletterAdmin/admin/index'), 'visible'=>!Yii::app()->user->isGuest),
+			
+				/*
+				array('label'=>'Questions', 'url'=>array('/startups'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Questions', 'url'=>array('/ideas'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Questions', 'url'=>array('/questions'), 'visible'=>!Yii::app()->user->isGuest),
 				/*
 				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contact', 'url'=>array('/site/contact')),

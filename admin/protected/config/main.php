@@ -5,17 +5,27 @@
 
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
+//
+Yii::setPathOfAlias('chartjs', dirname(__FILE__).'/../extensions/yii-chartjs-master');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'MIT Arab Competition',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+	'preload'=>array('log' , 
+    'chartjs'), 
 
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
-		'application.components.*',
+		'application.components.*', 
+        'application.validators.*',
+        'application.helpers.*',
+        'application.behaviors.*',   
+        'application.extensions.*',
+        'application.modules.newsletter.models.*',
+
+
 	),
 
 	'modules'=>array(
@@ -27,6 +37,14 @@ return array(
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		), 
+		 'newsletterAdmin'=>array(
+			 'schedule'=>true,
+			  'enableGroups'=>true,
+			  'usingMailEngine'=>true,// Ja: I don't want to queue stuff here just send
+		  ),
+			'mailer'=>array(
+            'hash'=>'miTC0mpet!ti0n',
+        ),
 	),
 
 	// application components
@@ -35,6 +53,18 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		
+		 'email'=>array(
+		            'class'=>'application.extensions.amailer.AMailerComponent',
+		            'smtpHost'=>'mitarabcompetition.com',//put ip of host
+		            'smtpUsername'=>'web@mitarabcompetition.com',
+		            'smtpPassword'=>'ja123s',
+		            'scheduler'=>'true,',
+		            'from'=>array('info@mitarabcompetition.com', 'MIT Arab Competition'),
+		  ),
+		  
+		// ja used to draw charts
+		'chartjs'=>array( 'class' => 'chartjs.components.ChartJs', ),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -51,7 +81,8 @@ return array(
 		),
 		// uncomment the following to use a MySQL database
 		
-		*/
+		*/ 
+			
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=competition',
 			'emulatePrepare' => true,
@@ -59,6 +90,17 @@ return array(
 			'password' => '',
 			'charset' => 'utf8',
 		),
+	
+		'image'=>array(
+	          'class'=>'application.extensions.image.CImageComponent',
+	            // GD or ImageMagick
+	            'driver'=>'GD',
+	            // ImageMagick setup path
+	            // ja: enable this iza st2mlt il ImageMagick wa dela 3l path te3a.. kapich?
+	           // 'params'=>array('directory'=>'/opt/local/bin'),
+	        ),
+		
+		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',

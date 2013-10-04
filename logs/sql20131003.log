@@ -1,0 +1,41 @@
+select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:31:17
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:36:53
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:37:00
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:41:07
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:41:09
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:41:30
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:41:44
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:42:01
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:42:21
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-03 05:42:53
+	

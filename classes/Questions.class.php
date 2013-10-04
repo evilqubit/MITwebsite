@@ -4,7 +4,7 @@ class Questions extends Database
 	public function __construct() 
 	{  
 		$this->_table = "questions"; 
-		$this->_key = "idquestions";
+		$this->_key = "id";
 		$this->_active = "active";
 		$this->_deleted="deleted"; 
 		$this->getInstance();
@@ -16,15 +16,15 @@ class Questions extends Database
 	 * get a question + answer by its type and application
 	 */
 	public function getByType($type = 0 , $application = 0)
-	{
+	{ 
 		$and = $type == 0 ? ""  : " and types_idtypes = $type" ;
 		$sql  = "
 			select * from $this->_table 
-			left join answers   on questions_idquestions = idquestions
-			where application_idapplication = $application  $and
+			left join answers   on questions_id = id
+			where application_id  = $application  $and
 		
 		" ; 
-		$this->query($sql);
+		$this->query($sql); 
 		return $this->fetchAll("_setQ"); 
 	}
 

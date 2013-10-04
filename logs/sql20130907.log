@@ -1,0 +1,26 @@
+select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-07 20:38:32
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-07 21:08:07
+	select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-07 21:43:19
+	select *  from users u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-07 21:47:38
+	select *  from users u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-07 21:55:25
+	

@@ -306,12 +306,12 @@ class Database
 	public function listAll($condition= 1 , $join="", $select="")
 	{ 
 		$and = (isset($this->_showActive )&& $this->_showActive) ? " and active=1" : "";
-		$and = (isset($this->_showDeleted) && !$this->_showDeleted)? " and deleted=0" : "";
+		$and .= (isset($this->_showDeleted) && !$this->_showDeleted)? " and deleted=0" : "";
 		
 		$sql = "select e.* $select  from $this->_table e 
 		$join
 		where $condition $and ";
-		$this->query($sql); 
+		 $this->query($sql); 
 		if ($this->result)
 		{
 			return $this->fetchAll();			

@@ -1,0 +1,17 @@
+select *  from user u
+		left join user_roles  ur  on  iduser  = user_iduser
+		left join roles r on roles_idroles = idroles
+		where   iduser = '1' 
+	 From Ip: 127.0.0.1 - Date: 2013-09-03 16:14:48
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-03 16:16:12
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-03 16:16:12
+	

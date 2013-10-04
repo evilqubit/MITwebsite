@@ -1,0 +1,34 @@
+select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-17 17:49:51
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-17 17:49:51
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-17 17:50:51
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-17 17:50:51
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-09-17 19:29:32
+	
+			select * from questions 
+			left join answers   on questions_idquestions = idquestions
+			where application_idapplication = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-09-17 19:29:32
+	

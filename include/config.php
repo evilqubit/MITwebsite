@@ -8,11 +8,18 @@ define("DB_HOST", "localhost");
 define("DB_USER", "root");
 define("DB_DATEBASE", "competition");
 define("DB_PASSWORD", "");
-define("HASH_KEY", "=0111%3+!+!011s");
 
 
+define("HASH_KEY", "=0111%3+!+!011s"); 
+define('SALT1', '24859f@#$#@$');
+define('SALT2', '^&@#_-=+Afda$#%');
 
-define("YEAR", 1314);
+
+// default system language
+$lang = "en"; 
+include_once "../include/$lang.inc";
+// i guess this is some output buffering
+$sOutput="";
 
 // list of all used emails
 define("DEFAULT_EMAIL", "info@mitarabcompetition.com"); 
