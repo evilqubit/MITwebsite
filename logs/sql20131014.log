@@ -1,0 +1,296 @@
+select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:20:53
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:21:06
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:21:06
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:21:17
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:21:18
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:24:00
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:24:00
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:24:04
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:24:47
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:25:01
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:25:01
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:27:24
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:27:24
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:27:49
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:28:02
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:28:48
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:28:48
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:28:54
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:30:10
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:30:31
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:30:36
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:30:46
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:30:55
+	select e.*   from application e 
+		
+		where 1  and active=1 and deleted=0 
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:31:06
+	select * from application
+			left join jury_has_application ja on application_idapplication = application.idapplication
+			where jury_idjury = 'jamil'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:39:50
+	select * from application
+			left join jury_has_application ja on application_idapplication = application.idapplication
+			where jury_idjury = 'jamil'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:39:50
+	select * from application
+			left join jury_has_application ja on application_idapplication = application.idapplication
+			where jury_idjury = 'jamil'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:40:18
+	select * from application
+			left join jury_has_application ja on application_id = application.idapplication
+			where jury_idjury = 'jamil'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:40:53
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = 'jamil'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:41:15
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:41:50
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:42:38
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:43:50
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:46:57
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:46:59
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:47:44
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:48:35
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:49:09
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:49:23
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:49:58
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:51:02
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:54:55
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:55:09
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:55:09
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:57:24
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:57:24
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:57:27
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:57:30
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:57:30
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:58:09
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:58:09
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:59:48
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 11:59:48
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 12:01:43
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 12:01:59
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 12:02:06
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 12:02:18
+	

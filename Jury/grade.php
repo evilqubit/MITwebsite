@@ -19,7 +19,7 @@ $questions->listAll();
 $answers = new Questions;
 $answers->getByType($type , $application);
 
-
+	
 ?>
 
 
@@ -37,10 +37,39 @@ $answers->getByType($type , $application);
 	<fieldset> 
 	<?php 
 	 
+	$mysheet = new DataSheet();
+	$mysheet->tableStyleClass="";
+	$mysheet->openSheetTable("application",  "90%", 0,0 );
+	$mysheet->headerRowStyleClass = 'TableHeadersColorNass';
+	$fields	= array(_text("#"),_text("Question"),_text("Answer"),_text("Grade"));
+	$width = array('10px;','300px','' , '12px'); 
+	$mysheet->addSheetTableHeader( $fields , $width,"center" ,1); 
+	
+	
+	echo " <pre>";
+	print_r($questions);
+	echo "</pre>";
 foreach ($questions->data as $question)
 { 
 	$inc++;
 	//echo $question["qtitle_en"] . "<br>";
+	
+		$mysheet->openSheetTableRow($question["id"]);
+		$mysheet->addSheetCell(  $inc); 
+		$mysheet->addSheetCell(  $question["qtitle_en"]); 
+		$mysheet->addSheetCell($answers->data[$inc]["value"]); 
+		if ($question["grade"] > 0)
+		{
+			$data = "<select>";
+			for ($i = 0 ; $i <=$question["grade"]; $i++ )
+				$data.= " <option value='$i'>$i</option>";
+			$data .= "</select>";
+			$mysheet->addSheetCell($data);   
+		}else 
+		$mysheet->addSheetCell(  "-");   
+		$mysheet->closeSheetTableRow(); 
+		
+		/*
 	?>
 	<div class="clear10"></div>
 	<div class="fm-req">
@@ -49,16 +78,19 @@ foreach ($questions->data as $question)
 	</div>  
 	
 	
-	<?php 
+	<?php */
 
 
 }
+	$mysheet->closeSheetTable();
 	
 	
-	?>
+	?> 
 		<div class="clear10"></div>
-		<div  class="fm-opt">
-			<input type=submit value="Save" class=submit></input>
+		<div style="width:90%; padding: 1px; text-align:center">
+			<input type=submit name=save value="Save" class=submit></input>
+			<input type=submit name=submit value="Save & Submit" class=submit></input>
+			<input type=submit name=disqualify value="Disqualify" class=submit></input>
 		</div>
 	</fieldset>
 </form>
@@ -66,4 +98,12 @@ foreach ($questions->data as $question)
 <?php
 include ("jfooter.php");
 ?> 
- 
+ <script type="text/javascript" charset="utf-8">
+	$(document).ready(function() { 
+		$('#application').dataTable( {  
+			 "sDom": 'tr' , 
+			"iDisplayLength": -1  
+		} ); 
+		
+	} ); 
+</script>

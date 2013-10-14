@@ -136,7 +136,7 @@ class DataSheet
 	 * @param array_str $headerLabels is an array that contains the header elements.
 	 * @param array_str $headerWidth contains width and/or %width of header elements
 	 */
-	function addSheetTableHeader($headerLabels, $headerWidth, $align="center",$colspan=1 , $alignLast = "")
+	function addSheetTableHeader($headerLabels, $headerWidth, $align="center",$colspan=1 , $alignLast = "center")
 	{
 		//Gets how many elements are in the array
 		//These elements are the header items

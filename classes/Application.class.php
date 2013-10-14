@@ -12,7 +12,23 @@ class Application extends Database
 		$this->_showActive = true;
 		$this->_showDeleted = false;
 		
-	}  
+	} 
+	
+	/**
+	 * gets all apps assigned to a certain jury
+	 *
+	 * @param unknown_type $idjury
+	 */
+	public function getByJury($idjury)
+	{
+		$sql = "select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '$idjury'
+		
+		";
+		$this->query($sql); 
+		return $this->fetchAll(); 
+	}
  
 
 }

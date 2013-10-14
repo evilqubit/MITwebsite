@@ -291,8 +291,8 @@ function print_language($lang)
 		case 2: return "en";break;
 		case 3: return "fr";break;
 		case "ar": return "عربي";break;
-		case "en": return "انكليزي";break;
-		case "fr": return "فرنسي";break;
+		case "en": return "English";break;
+		case "fr": return "French";break;
 		default: return "";
 	}
 }

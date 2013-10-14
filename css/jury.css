@@ -1,5 +1,24 @@
 @CHARSET "UTF-8";
-
+/* ==========================================================================
+   General css
+   ========================================================================== */
+a:hover
+{
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.right{float:right;}
+.left{float:left;}
+.clear{clear:both;}
+.clearR{clear:right;}
+.clearL{clear:left;}
+.clear10{clear:both; height:10px;}
+.alignR{text-align:right;}
+.alignL{text-align:left;}
+.alignC{text-align:center;}
+.bold{font-weight:bold;font-size:16px;font-family:Arabic Transparent;}
+.regular{font-size:16px;font-family:Arabic Transparent;}
+.underline{text-decoration:underline;}
 /* ==========================================================================
    form related
    ========================================================================== */
@@ -17,7 +36,7 @@ div.fm-multi label{display:block;width:200px;padding-left:5em;text-align:right;}
 
 fieldset div.fm-req{font-weight:bold;}fieldset div.fm-req label:before{content:"* ";}
 fieldset div.fm-req label{font-weight:bold;}
-fieldset input , fieldset select{float:left;}
+/*fieldset input , fieldset select{float:left;}*/
 div.fm-req input , div.fm-req select{float:left;}
 
 .submit {

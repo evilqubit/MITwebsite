@@ -3,7 +3,6 @@
 
 .clear				{ clear: both; }
 
-form				{ width: 406px; margin: 91px auto 0; }
 
 legend				{ display: none; }
 

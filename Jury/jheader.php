@@ -1,6 +1,10 @@
 <?php
 @session_start();
 $loggedin = false;
+if (isset($_GET["logout"]))
+{
+	session_destroy();
+}
 if (!isset($skipLogin))
 {
 	// check if the jurey is logged in or not
@@ -52,12 +56,12 @@ if (!isset($skipLogin))
       <?php echo _text("MIT Jury Portal", "Jury");?>
     </h2>
     <div id="demo-bar-buttons">
-    	<a class="header-button" href="../index.php">Back Home</a>
+    	<a class="header-button" href="../Jury/index.php">Back Home</a>
     	<?php 
     	if ($loggedin)
     	{
     		?>
-    		<a class="header-button" href="../index.php?logout=true">logout</a>
+    		<a class="header-button" href="../Jury/index.php?logout=true">logout</a>
     		<?php 
     	}
     	?> 
