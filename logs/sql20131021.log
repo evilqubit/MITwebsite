@@ -1,0 +1,9 @@
+select *  from pages e where id = '1'  limit 1
+	 From Ip: 127.0.0.1 - Date: 2013-10-21 02:49:38
+	select *  from pages e where alias = 'forum'  limit 1
+	 From Ip: 127.0.0.1 - Date: 2013-10-21 02:53:50
+	select *  from pages e where alias = 'forum'  limit 1
+	 From Ip: 127.0.0.1 - Date: 2013-10-21 02:57:40
+	select *  from pages e where alias = 'tracks'  limit 1
+	 From Ip: 127.0.0.1 - Date: 2013-10-21 02:57:42
+	

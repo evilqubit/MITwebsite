@@ -1,0 +1,149 @@
+storyjs_jsonp_data = {
+    "timeline":
+    {
+        "headline":"Sh*t People Say asdf asdfasdf asdf asdf asdf asdf asdf sadfasdfsdf asdf asdf sadfsd",
+        "type":"default",
+		"text":"People say stuff",
+		"startDate":"2012,1,26",
+        "date": [
+            
+            {
+                "startDate":"2012,9,26",
+				"endDate":"2012,10,27",
+                "headline":"4th MIT Arab Business Plan Competition 2010-2011",
+                "text":"<p>This year's MIT Arab Business Plan Competition is not like any other year. We are aiming for something unique- something to be seen as a step-up from previous Competitions- starting with our inspirational promotional campaign, which was unveiled for the 1st time at the launch event in Jordan. Besides just raising awareness about entrepreneurship and the Competition itself, the campaign takes it a step further and promotes role models across the Arab region.</p>",
+                "asset":
+                {
+                    "media":"http://www.youtube.com/watch?v=MSO0MzQ7jrA",
+                    "credit":"",
+                    "caption":""
+                }
+            },	
+            {
+                "startDate":"2012,7,26",
+				"endDate":"2012,8,27",
+                "headline":"Sh*t Politicians Say",
+                "text":"<p>In true political fashion, his character rattles off common jargon heard from people running for office.</p>",
+                "asset":
+                {
+                    "media":"http://youtu.be/u4XpeU9erbg",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+            {
+                "startDate":"2012,5,10",
+                "headline":"Sh*t Nobody Says",
+                "text":"<p>Have you ever heard someone say “can I burn a copy of your Nickelback CD?” or “my Bazooka gum still has flavor!” Nobody says that.</p>",
+                "asset":
+                {
+                    "media":"http://youtu.be/f-x8t0JOnVw",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2012,1,23",
+                "headline":"Sh*t Graphic Designers Say",
+                "text":"TesTest TestTest TestTest TestTest TestTest TestTest Testt Test",
+                "asset":
+                {
+                    "media":"http://youtu.be/KsT3QTmsN5Q",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2011,12,30",
+                "headline":"Sh*t Wookiees Say",
+                "text":"Test TestTest TestTest Test Test Test Test Test Test Test",
+                "asset":
+                {
+                    "media":"http://youtu.be/vJpBCzzcSgA",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2012,1,17",
+                "headline":"Sh*t People Say About Sh*t People Say Videos",
+                "text":"h*t Girls h*t Girls h*t Girls h*t Girls h*t Girls ",
+                "asset":
+                {
+                    "media":"http://youtu.be/c9ehQ7vO7c0",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2012,1,20",
+                "headline":"Sh*t Social Media Pros Say",
+                "text":" Test Test Test Test Test Test Test TestTest Test Test Test Test Test",
+                "asset":
+                {
+                    "media":"http://youtu.be/eRQe-BT9g_U",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2012,1,11",
+                "headline":"Sh*t Old People Say About Computers",
+                "text":"Test TestTest TestTest Test Test TestTest TestTest Test",
+                "asset":
+                {
+                    "media":"http://youtu.be/HRmc5uuoUzA",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2012,1,11",
+                "headline":"Sh*t College Freshmen Say",
+                "text":"h*t Girls h*t Girls h*t Girls h*t Girls ",
+                "asset":
+                {
+                    "media":"http://youtu.be/rwozXzo0MZk",
+                    "credit":"",
+                    "caption":""
+                }
+            },
+			{
+                "startDate":"2011,12,16",
+                "headline":"Sh*t Girls Say - Episode 2",
+                "text":"h*t Girls h*t Girls h*t Girls h*t Girls h*t Girls h*t Girls h*t Girls ",
+                "asset":
+                {
+                    "media":"http://youtu.be/kbovd-e-hRg",
+                    "credit":"",
+                    "caption":"Writers & Creators: Kyle Humphrey & Graydon Sheppard"
+                }
+            },
+			{
+                "startDate":"2012,1,28",
+                "headline":"Sh*t Girls Say - Episode Lewis",
+                "text":"Test Test h*t Girls h*t Girls h*t Girls h*t Girls h*t Girls h*t Girls ",
+                "asset":
+                {
+                    "media":"http://youtu.be/bDHUhT71JN8",
+                    "credit":"",
+                    "caption":"Writers & Creators: Kyle Humphrey & Graydon Sheppard"
+                }
+            },
+
+			{
+                "startDate":"2012,1,12",
+                "headline":"Sh*t Hipsters Say",
+                "text":"No meme is complete without a bit of hipster-bashing.",
+                "asset":
+                {
+                    "media":"http://youtu.be/FUhrSVyu0Kw",
+                    "credit":"",
+                    "caption":"Written, Directed, Conceptualized and Performed by Carrie Valentine and Jessica Katz"
+                }
+            }
+
+
+        ]
+    }
+}
