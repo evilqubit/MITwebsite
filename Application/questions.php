@@ -7,6 +7,7 @@ include ("../include/header.php");
 $type = 1;
 $application = 1;
 $inc =0;
+
 $questions = new Questions;
 $questions->listAll();
 

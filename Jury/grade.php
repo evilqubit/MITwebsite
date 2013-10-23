@@ -2,24 +2,66 @@
 include_once '../include/config.php';
 include_once '../include/connection.php';
 include_once '../include/functions.php';
+
+	
 include ("jheader.php"); 
 
-
 $id = isset($_GET["id"]) ?clean(base64_decode($_GET["id"])) : 0; // id of selected page
+$idjury = $_SESSION['user_authorized'];
 
-$application = new Application(); 
-
+$appquestions = new Application();
+$appquestions->getQuestionAnswers($id);
+ 
+if (isset($_POST["save"]))
+{
+	// if the submit button is pressed
+	$inc = 0;
+	$grade = new  AnswerGrades();
+	foreach ($_POST["grading"] as $key=>$arr	)
+	{
+		$inc ++ ; 
+		$condition = " where answers_idanswers =$key and jury_id = $idjury";
+		var_dump($arr);
+		$grade->update($arr , $condition);
+		var_dump($grade);
+		/*
+		if (!$ja->error)
+		{
+			setTrigger(_text("Grade for question #$inc saved successfully", "General"), SUCCESS);
+		}
+		else
+		{
+			setTrigger(_text("Sorry could not update the grade for question #$inc", "General"), ERROR); 
+		}*/
+	}
+	// update the jury application 
+	
+		$ja = new JuryApplication(); 
+		$condition  = " jury_idjury = $idjury and  application_id = $id"; 
+		//$ja->update($arr , $condition );
+	
+	
+//	var_dump($_POST["application"]);
+	 
+}  
+ 
+/*
+	echo " <pre>";
+	print_r($application);
+	echo "</pre>";
 
 $type = 1;
-$application = 1;
+$application = 2;
 $inc =0;
+
+ 
 $questions = new Questions;
 $questions->listAll();
 
 $answers = new Questions;
-$answers->getByType($type , $application);
-
-	
+$answers->getByType($type , $id);
+*/
+displayTrigger();
 ?>
 
 
@@ -30,7 +72,7 @@ $answers->getByType($type , $application);
 </div>
 
  
-<form method="POST" enctype="multipart/form-data" name="addedit_employee_form" id="addedit_employee_form" action="addEdit_employee.php?id=<?php echo $id; ?>&action=<?php echo ($id == 0 ? "add" : "edit");?>">
+<form method="POST" enctype="multipart/form-data" name="grade_form" id="addedit_employee_form" action="grade.php?id=<?php echo $_GET["id"]; ?>">
 	<input type=hidden name="Employee[idemployee]"  value="null">  </input>
 	<input type=hidden name="Employee[active]"  value="1">  </input>
 	
@@ -44,23 +86,19 @@ $answers->getByType($type , $application);
 	$fields	= array(_text("#"),_text("Question"),_text("Answer"),_text("Grade"));
 	$width = array('10px;','300px','' , '12px'); 
 	$mysheet->addSheetTableHeader( $fields , $width,"center" ,1); 
-	
-	
-	echo " <pre>";
-	print_r($questions);
-	echo "</pre>";
-foreach ($questions->data as $question)
+ 
+	$inc = 0;
+foreach ($appquestions->data as $question)
 { 
-	$inc++;
 	//echo $question["qtitle_en"] . "<br>";
 	
 		$mysheet->openSheetTableRow($question["id"]);
-		$mysheet->addSheetCell(  $inc); 
+		$mysheet->addSheetCell(  $inc+1); 
 		$mysheet->addSheetCell(  $question["qtitle_en"]); 
-		$mysheet->addSheetCell($answers->data[$inc]["value"]); 
+		$mysheet->addSheetCell( $question["value"]); 
 		if ($question["grade"] > 0)
 		{
-			$data = "<select>";
+			$data = "<select name=grading[".$question["idanswers"] ."][grade]>";
 			for ($i = 0 ; $i <=$question["grade"]; $i++ )
 				$data.= " <option value='$i'>$i</option>";
 			$data .= "</select>";
@@ -69,18 +107,7 @@ foreach ($questions->data as $question)
 		$mysheet->addSheetCell(  "-");   
 		$mysheet->closeSheetTableRow(); 
 		
-		/*
-	?>
-	<div class="clear10"></div>
-	<div class="fm-req">
-		<label for="intro"><?php echo $question["qtitle_en"] ;?></label>
-		<textarea rows="" cols="" readonly><?php echo $answers->data[$inc]["value"];?></textarea> 
-	</div>  
-	
-	
-	<?php */
-
-
+		$inc++; 
 }
 	$mysheet->closeSheetTable();
 	

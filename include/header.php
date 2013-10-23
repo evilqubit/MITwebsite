@@ -1,5 +1,7 @@
 <?php 
 @session_start(); 
+
+/*
 if (isset($pageId) && $pageId!="" )
 {
  	$sql = "select * from pages where page_id = '$pageId'";
@@ -12,47 +14,16 @@ if (isset($pageId) && $pageId!="" )
  		$page_title = $row["meta_keyword"];
  	} 
 }
+*/
 ?>
- <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width"> 
-        <link rel="stylesheet" href="../css/jquery-ui-1.8.4.custom.css"> 
-        <style>
-            body {
-                padding-top: 60px;
-                padding-bottom: 40px;
-            }
-        </style> 
-		<script src="../js/vendor/jquery-1.9.1.min.js"></script>
-		<!--  Jq validator	 -->
-		<script type="text/javascript" src="../js/vendor/jquery.validate.min.js"></script>
-		
-		
-		<!-- Add mousewheel plugin (this is optional) -->
-		<script type="text/javascript" src="../js/vendor/jquery.mousewheel-3.0.6.pack.js"></script>
-		
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          
+        <script src="../js/vendor/jquery.js"></script> 
         <script src="../js/vendor/jquery-ui.js"></script>  
-        <script src="../js/vendor/bootstrap.min.js"></script>
-
-         <!-- jQuery File Upload Dependencies -->
-        <script src="../js/vendor/js_upload/jquery.ui.widget.js"></script>
-        <script src="../js/vendor/js_upload/jquery.iframe-transport.js"></script>
-        <script src="../js/vendor/js_upload/jquery.fileupload.js"></script>
-		
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-        <!-- jQuery prettyCheckable -->
-        <link rel="stylesheet" href="../css/prettyCheckable.css">
-        <script src="../js/vendor/prettyCheckable.js"></script>
-        
         <?php 
         if(isset($support["ComboBox"])&& $support["ComboBox"]):
         ?>
@@ -75,12 +46,77 @@ if (isset($pageId) && $pageId!="" )
 			<?php         	
         }
         ?>
-   </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+        
+        
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" type="text/css" href="../css/mit.css">
 
-        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="logo"><img src="../images/logo.jpg"/></div>
+
+
+                <div class="userNav">
+                    <button class="btn-primary">Login</button>
+                    <input type="text" class="search" id="search" placeholder="Type your search">
+                    <i class="searchIcon">&nbsp;</i>
+                </div>
+
+                <div class="wrapper">
+                    <div class="menu-holder">
+                        <ul class="menu">
+                            <li class=" home active" >
+                                <a href="javascript:void(0)">Home</a>
+                            </li>
+                            <li class="firstList">
+                                <a href="../Main/page.php?alias=tracks">Tracks</a>
+                            </li>
+                            <li class="firstList">
+                                <a href="javascript:void(0)">Judges & Coaches</a>
+                                    <ul class="submenu judges">
+                                        <li class="seperator"><a href="../Main/page.php?alias=round1">Round I</a></li>
+                                        <li class="seperator"><a href="../Main/page.php?alias=round2">Round II</a></li>
+                                        <li class="seperator"><a href="../Main/page.php?alias=round3">Round III</a></li>
+                                        <li><a href="#">Coaches</a></li>
+                                    </ul>
+                            </li>
+                            <li class="firstList">
+                                <a href="javascript:void(0)">Judges & Coaches</a>
+                                <ul class="submenu judges">
+                                    <li class="seperator"><a href="#">Round I</a></li>
+                                    <li class="seperator"><a href="#">Round II</a></li>
+                                    <li class="seperator"><a href="#">Round III</a></li>
+                                    <li><a href="#">Coaches</a></li>
+                                </ul>
+                            </li>
+                            <li class="firstList"><a class="test" href="#">This is the one</a>
+
+                                <ul class="submenu">
+                                    <li><a href="#">Submenu item 1</a>
+                                    </li>
+                                    <li><a href="#">Submenu item 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="firstList"><a href="#">menu item 3</a>
+                            </li>
+                            <li class="firstList"><a href="#">menu item 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- menu-holder end -->
+                </div>
+ 
+
+            </div>
+            <div class="news">
+                <div class=""></div>
+            </div>
+        </div>
+        
+        
+        
 
        	

@@ -29,6 +29,25 @@ class Application extends Database
 		$this->query($sql); 
 		return $this->fetchAll(); 
 	}
+	
+	/**
+	 * get the questions and answers of a specific application
+	 *
+	 * @param unknown_type $idapplication
+	 * @return unknown
+	 */
+	public function getQuestionAnswers($idapplication = 0 )
+	{
+		$id =  $idapplication > 0 ? $idapplication : $this->row[$this->_key ];
+		
+		$sql =  "
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = $id ) 
+		
+		" ; 
+		$this->query($sql); 
+		return $this->fetchAll();
+	}
  
 
 }

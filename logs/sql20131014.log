@@ -293,4 +293,433 @@ select e.*   from application e
 		
 		
 	 From Ip: 127.0.0.1 - Date: 2013-10-14 12:02:18
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:41:04
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:41:04
+	select * from application
+			left join jury_has_application ja on application_id = application.id
+			where jury_idjury = '1'
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:41:12
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:41:15
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 1   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:41:15
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:44:03
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:44:03
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:45:12
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:45:12
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:46:04
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:46:04
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:46:59
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:46:59
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:47:20
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:47:20
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:47:20
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:47:20
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:47:21
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:47:21
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:48:01
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:48:01
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:48:34
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:48:34
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:49:54
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:49:54
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:50:19
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:50:19
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:51:00
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:51:00
+	select e.*   from questions e 
+		
+		where 1  
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:51:12
+	
+			select * from questions 
+			left join answers   on questions_id = id
+			where application_id  = 2   and types_idtypes = 1
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 13:51:12
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:11:04
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:12:13
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:17:33
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:17:36
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id =  ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:17:40
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:18:09
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:18:13
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:18:20
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:18:25
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:18:40
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:18:53
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:19:24
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:19:27
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:19:30
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:19:56
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:19:58
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:20:01
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:20:16
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:20:29
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:20:38
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:20:44
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:20:52
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:21:16
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:34:46
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:35:22
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:35:28
+	  UPDATE `jury_has_application` SET `grade`= '2'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:35:28
+	  UPDATE `jury_has_application` SET `grade`= '2'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:35:28
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:35:52
+	  UPDATE `jury_has_application` SET `grade`= '2'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:35:52
+	  UPDATE `jury_has_application` SET `grade`= '2'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:35:52
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:17
+	  UPDATE `jury_has_application` SET `grade`= '1'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:17
+	  UPDATE `jury_has_application` SET `grade`= '1'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:17
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:24
+	  UPDATE `jury_has_application` SET `grade`= null  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:24
+	  UPDATE `jury_has_application` SET `grade`= '3'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:24
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:38
+	  UPDATE `jury_has_application` SET `grade`= null  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:38
+	  UPDATE `jury_has_application` SET `grade`= null  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:38
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:36:57
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:37:36
+	  UPDATE `jury_has_application` SET `grade`= null  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:37:36
+	  UPDATE `jury_has_application` SET `grade`= null  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:37:36
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:37:43
+	  UPDATE `jury_has_application` SET `grade`= '1'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:37:43
+	  UPDATE `jury_has_application` SET `grade`= '1'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:37:43
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:38:36
+	  UPDATE `jury_has_application` SET `grade`= '2'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:38:36
+	  UPDATE `jury_has_application` SET `grade`= '3'  Where  jury_idjury = 1 and  application_id = 2
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 14:38:36
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 15:02:52
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 15:03:05
+	
+			select * from questions q
+			left join answers a on  ( a.questions_id = q.id and a.application_id = 2 ) 
+		
+		
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 15:05:20
+	  UPDATE `jury_graded_answers` SET `grade`= '1'  Where  where answers_idanswers =1 and jury_id = 1
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 15:05:20
+	  UPDATE `jury_graded_answers` SET `grade`= '4'  Where  where answers_idanswers =2 and jury_id = 1
+	 From Ip: 127.0.0.1 - Date: 2013-10-14 15:05:20
 	
